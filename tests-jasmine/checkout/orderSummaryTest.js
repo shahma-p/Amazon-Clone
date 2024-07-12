@@ -38,15 +38,12 @@ beforeEach(()=>{
   expect(
     document.querySelectorAll('.js-cart-item-container').length).toEqual(2);
     expect(
-    document.querySelector(`.js-product-quantity-${productId1}`).innerText
-    ).toContain('Qantity:2')
+    document.querySelector(`.js-product-quantity-${productId1}`).innerText).toContain('Qantity: 2');
+
     expect(
-    document.querySelector(`.js-product-quantity-${productId2}`).innerText
-    ).toContain('Quantity:1');
+    document.querySelector(`.js-product-quantity-${productId2}`).innerText).toContain('Quantity: 1');
 
-
-    document.querySelector('.js-test-container').innerHTML=``;
-
+    document.querySelector('.js-test-container').innerHTML='';
 })
 
   it('removes a product',()=>{
